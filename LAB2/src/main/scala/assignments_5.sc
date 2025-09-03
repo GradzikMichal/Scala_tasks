@@ -1,0 +1,6 @@
+val a = List.range(1,5)
+a.reduceLeft(_-_)
+a.reduceRight(_-_)
+val s = List('a' to 'z' :_*)
+s.foldLeft("A")(_ + _.toString)
+s.foldRight("Z")(_.toString + _)
